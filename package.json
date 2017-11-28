@@ -1,0 +1,23 @@
+{
+  "name": "liarsdice_types",
+  "version": "1.0.0",
+  "description": "types for the liars dice server and client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdabell/liarsdice_types.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdabell/liarsdice_types/issues"
+  },
+  "homepage": "https://github.com/rdabell/liarsdice_types#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.19.2"
+  }
+}

@@ -1,13 +1,44 @@
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./types/dice"));
-__export(require("./types/bid"));
-__export(require("./types/player"));
-__export(require("./types/game"));
-__export(require("./types/chat"));
-__export(require("./types/message"));
-__export(require("./types/turn"));
-//# sourceMappingURL=index.js.map
+const moment_1 = require("moment");
+class Dice {
+}
+exports.Dice = Dice;
+class Bid {
+    constructor() {
+        this.quantity = 0;
+        this.dice = null;
+    }
+}
+exports.Bid = Bid;
+class Player {
+    constructor() {
+        this.name = "";
+        this.color = "";
+    }
+}
+exports.Player = Player;
+class Chat {
+    constructor() {
+        this.messenger = null;
+        this.message = "";
+        this.time = moment_1.utc();
+    }
+}
+exports.Chat = Chat;
+class ChatWindow {
+    constructor() {
+        this.messages = [];
+    }
+}
+exports.ChatWindow = ChatWindow;
+class Game {
+    constructor() {
+        this.players = [];
+        this.turn = null;
+    }
+}
+exports.Game = Game;
+class Turn {
+}
+exports.Turn = Turn;
